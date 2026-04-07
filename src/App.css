@@ -1,0 +1,369 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+#root {
+  width: 100%;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #1e90ff 0%, #00d4ff 100%);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #00d4ff 0%, #1e90ff 100%);
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ✨ Krishna-Themed Animations ✨ */
+
+/* Floating Animation - Celestial/Divine */
+@keyframes floatingKrishna {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Gentle float for cards */
+@keyframes gentleFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* Glowing Effect - Spiritual Light */
+@keyframes spiritualGlow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(30, 144, 255, 0.3), 0 0 20px rgba(0, 212, 255, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(30, 144, 255, 0.5), 0 0 40px rgba(0, 212, 255, 0.3);
+  }
+}
+
+/* Shimmer Effect - Divine Light */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+/* Pulse Animation - Heartbeat */
+@keyframes divineHeartbeat {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+/* Fade In Down */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Fade In Up */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Scale In */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Spiritual Wave */
+@keyframes spiritualWave {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
+
+/* Radiant Glow */
+@keyframes radiantGlow {
+  0%, 100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.2);
+  }
+}
+
+@keyframes peacockGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(27, 127, 126, 0.3), 0 0 30px rgba(255, 140, 0, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(27, 127, 126, 0.5), 0 0 40px rgba(255, 140, 0, 0.3);
+  }
+}
+
+/* Apply Krishna animations to elements */
+.btn {
+  animation: scaleIn 0.6s ease-out;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  animation: divineHeartbeat 0.6s ease-in-out;
+}
+
+/* Apply float animation to cards */
+.feature-card,
+.service-card,
+.project-card,
+.team-member,
+.founder-card,
+.culture-card,
+.reason-card,
+.benefit,
+.info-card,
+.vision-card,
+.why-card,
+.faq-item {
+  animation: gentleFloat 3s ease-in-out infinite;
+}
+
+/* Stagger animations for better effect */
+.feature-card:nth-child(1) { animation-delay: 0s; }
+.feature-card:nth-child(2) { animation-delay: 0.1s; }
+.feature-card:nth-child(3) { animation-delay: 0.2s; }
+.feature-card:nth-child(4) { animation-delay: 0.3s; }
+
+.service-card:nth-child(n) { animation-delay: calc(0.1s * var(--n, 0)); }
+
+/* Responsive utilities */
+@media (max-width: 1024px) {
+  body {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .feature-card,
+  .service-card,
+  .project-card,
+  .team-member,
+  .founder-card,
+  .culture-card,
+  .reason-card,
+  .benefit,
+  .info-card,
+  .vision-card,
+  .why-card,
+  .faq-item {
+    padding: 1.5rem;
+  }
+
+  .btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .feature-card,
+  .service-card,
+  .project-card,
+  .team-member,
+  .founder-card,
+  .culture-card,
+  .reason-card,
+  .benefit,
+  .info-card,
+  .vision-card,
+  .why-card,
+  .faq-item {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    width: 100% !important;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+
+.p-1 { padding: 0.5rem; }
+.p-2 { padding: 1rem; }
+.p-3 { padding: 1.5rem; }
+.p-4 { padding: 2rem; }
+

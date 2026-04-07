@@ -1,0 +1,414 @@
+.home {
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #0052CC 0%, #003A99 50%, #001a4d 100%);
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 20% 50%, rgba(0, 82, 204, 0.2) 0%, transparent 50%),
+              radial-gradient(circle at 80% 80%, rgba(255, 140, 0, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+  animation: spiritualGlow 4s ease-in-out infinite;
+}
+
+@keyframes spiritualGlow {
+  0%, 100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.1);
+  }
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 0 30px rgba(30, 144, 255, 0.3);
+  animation: scaleIn 0.8s ease-out;
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #FF8C00, #FFB81C, #0052CC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+  animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  color: #f0f0f0;
+  animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeInUp 1s ease-out 0.6s both;
+}
+
+/* Features Section */
+.features {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #f0f3f8 100%);
+  color: #1a1a1a;
+}
+
+.features-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 4px solid #0052CC;
+  transition: all 0.3s ease;
+  text-align: center;
+  animation: gentleFloat 3s ease-in-out infinite;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 82, 204, 0.08);
+}
+
+@keyframes gentleFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(0, 82, 204, 0.1) 0%, transparent 100%);
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.feature-card:hover::before {
+  opacity: 1;
+  animation: shimmerEffect 0.6s ease-in-out;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 82, 204, 0.2), inset 0 0 20px rgba(0, 82, 204, 0.05);
+  border-left-color: #FF8C00;
+}
+
+.feature-card h3 {
+  color: #0052CC;
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+}
+
+.feature-card p {
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+/* How We Work Section */
+.how-we-work {
+  padding: 4rem 2rem;
+  background: #0f172a;
+  color: #e0e7ff;
+}
+
+.how-we-work h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #1e90ff;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #cbd5e1;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.process-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.process-card {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2d4a99 100%);
+  padding: 2.5rem;
+  border-radius: 8px;
+  border-top: 3px solid #1e90ff;
+  transition: all 0.3s ease;
+  position: relative;
+  animation: gentleFloat 3s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--index, 0));
+}
+
+.process-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px;
+  background: linear-gradient(45deg, transparent 30%, rgba(0, 212, 255, 0.1) 50%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.process-card:hover {
+  box-shadow: 0 15px 35px rgba(30, 144, 255, 0.15), inset 0 0 20px rgba(30, 144, 255, 0.1);
+  border-top-color: #00d4ff;
+  transform: translateY(-8px);
+}
+
+.process-card:hover::after {
+  opacity: 1;
+}
+
+.process-number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1e90ff;
+  opacity: 0.2;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  animation: divineHeartbeat 2s ease-in-out infinite;
+}
+
+@keyframes divineHeartbeat {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(1.05);
+  }
+}
+
+.process-card h3 {
+  color: #1e90ff;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.process-card p {
+  color: #cbd5e1;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, #001a4d 0%, #003d99 50%, #005fcc 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(30, 144, 255, 0.1) 0%, transparent 70%);
+  animation: spiritualGlow 4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+  animation: scaleIn 0.8s ease-out;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #e0e7ff;
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  animation: scaleIn 0.6s ease-out;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+  transition: left 0.5s ease;
+  pointer-events: none;
+}
+
+.btn:hover::before {
+  left: 100%;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #0052CC 0%, #0066FF 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 82, 204, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0, 82, 204, 0.4), 0 0 20px rgba(255, 140, 0, 0.3);
+  filter: brightness(1.1);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #0052CC;
+  border: 2px solid #0052CC;
+  box-shadow: 0 0 0 rgba(0, 82, 204, 0.5);
+}
+
+.btn-secondary:hover {
+  background: #0052CC;
+  color: #ffffff;
+}
+
+.btn.large {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .features-grid,
+  .process-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .how-we-work h2,
+  .cta-section h2 {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,237 @@
+.projects {
+  min-height: 100vh;
+}
+
+.projects-header {
+  background: linear-gradient(135deg, #0052CC 0%, #003A99 50%, #001a4d 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.projects-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.projects-header p {
+  font-size: 1.2rem;
+  color: #FF8C00;
+}
+
+.projects-content {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #f0f3f8 100%);
+  color: #1a1a1a;
+}
+
+.projects-intro {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.projects-intro h2 {
+  font-size: 2.2rem;
+  color: #0052CC;
+  margin-bottom: 1rem;
+}
+
+.projects-intro p {
+  font-size: 1.1rem;
+  color: #666666;
+  line-height: 1.6;
+}
+
+.projects-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid #0052CC;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 82, 204, 0.08);
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0, 82, 204, 0.15);
+  border-color: #FF8C00;
+}
+
+.project-image {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.project-category {
+  display: inline-block;
+  background: linear-gradient(135deg, #0052CC 0%, #0066FF 100%);
+  color: #ffffff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.project-card h3 {
+  color: #0052CC;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.project-description {
+  color: #666666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  background: rgba(0, 82, 204, 0.08);
+  color: #0052CC;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  border: 1px solid #0052CC;
+  transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+  background: rgba(255, 140, 0, 0.1);
+  color: #FF8C00;
+  border-color: #FF8C00;
+}
+
+/* Project Stats */
+.project-stats {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #f0f3f8 100%);
+  color: #1a1a1a;
+}
+
+.project-stats h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #0052CC;
+  margin-bottom: 3rem;
+}
+
+.stats-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  padding: 2.5rem;
+  border-radius: 10px;
+  text-align: center;
+  border-top: 3px solid #0052CC;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 82, 204, 0.08);
+}
+
+.stat-card:hover {
+  border-top-color: #FF8C00;
+  box-shadow: 0 15px 35px rgba(0, 82, 204, 0.15);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0052CC;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+  color: #666666;
+  font-size: 1.1rem;
+}
+
+/* CTA Section */
+.projects-cta {
+  background: linear-gradient(135deg, #001a4d 0%, #003d99 50%, #005fcc 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.projects-cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.projects-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #e0e7ff;
+}
+
+.btn {
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #1e90ff 0%, #00d4ff 100%);
+  color: #0f172a;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(30, 144, 255, 0.3);
+}
+
+.btn.large {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .projects-header h1 {
+    font-size: 2rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-intro h2,
+  .project-stats h2,
+  .projects-cta h2 {
+    font-size: 1.8rem;
+  }
+}

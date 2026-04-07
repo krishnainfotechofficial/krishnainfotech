@@ -1,0 +1,235 @@
+.services {
+  min-height: 100vh;
+}
+
+.services-header {
+  background: linear-gradient(135deg, #0052CC 0%, #003A99 50%, #001a4d 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.services-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.services-header p {
+  font-size: 1.2rem;
+  color: #FF8C00;
+}
+
+.services-content {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #f0f3f8 100%);
+  color: #1a1a1a;
+}
+
+.services-intro {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.services-intro h2 {
+  font-size: 2.2rem;
+  color: #0052CC;
+  margin-bottom: 1rem;
+}
+
+.services-intro p {
+  font-size: 1.1rem;
+  color: #666666;
+  line-height: 1.6;
+}
+
+.services-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  padding: 2.5rem;
+  border-radius: 12px;
+  border-left: 5px solid #0052CC;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 8px rgba(0, 82, 204, 0.08);
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 82, 204, 0.15);
+  border-left-color: #FF8C00;
+}
+
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.service-card h3 {
+  color: #0052CC;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-description {
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.service-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(135deg, rgba(30, 144, 255, 0.1) 0%, rgba(0, 212, 255, 0.05) 100%);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.service-features li {
+  padding: 0.5rem 0;
+  color: #cbd5e1;
+  font-size: 0.95rem;
+}
+
+.service-features li:before {
+  content: "";
+  display: inline-block;
+  color: #1e90ff;
+}
+
+/* Why Services Section */
+.why-services {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #1e3a5f 0%, #0f172a 100%);
+  color: #e0e7ff;
+}
+
+.why-services h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #1e90ff;
+  margin-bottom: 3rem;
+}
+
+.benefits-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.benefit {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2d4a99 100%);
+  padding: 2.5rem;
+  border-radius: 10px;
+  border-top: 3px solid #1e90ff;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.benefit:hover {
+  box-shadow: 0 15px 35px rgba(30, 144, 255, 0.2);
+  border-top-color: #00d4ff;
+}
+
+.benefit-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1e90ff;
+  opacity: 0.2;
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+}
+
+.benefit h3 {
+  color: #1e90ff;
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.benefit p {
+  color: #cbd5e1;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+
+/* CTA Section */
+.services-cta {
+  background: linear-gradient(135deg, #001a4d 0%, #003d99 50%, #005fcc 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.services-cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.services-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #e0e7ff;
+}
+
+.btn {
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #1e90ff 0%, #00d4ff 100%);
+  color: #0f172a;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(30, 144, 255, 0.3);
+}
+
+.btn.large {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .services-header h1 {
+    font-size: 2rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-services h2,
+  .services-cta h2 {
+    font-size: 1.8rem;
+  }
+}

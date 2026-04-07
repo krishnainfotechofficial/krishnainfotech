@@ -1,0 +1,293 @@
+.founders {
+  min-height: 100vh;
+}
+
+.founders-header {
+  background: linear-gradient(135deg, #0052CC 0%, #003A99 50%, #001a4d 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.founders-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.founders-header p {
+  font-size: 1.2rem;
+  color: #FF8C00;
+}
+
+.founders-content {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #f0f3f8 100%);
+  color: #1a1a1a;
+}
+
+.founders-intro {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.founders-intro h2 {
+  font-size: 2.2rem;
+  color: #0052CC;
+  margin-bottom: 1rem;
+}
+
+.founders-intro p {
+  font-size: 1.1rem;
+  color: #666666;
+  line-height: 1.6;
+}
+
+.founders-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.founder-card {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2d4a99 100%);
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 2px solid #1e90ff;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.founder-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(30, 144, 255, 0.3);
+  border-color: #00d4ff;
+}
+
+.founder-avatar {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.founder-card h3 {
+  color: #1e90ff;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.founder-role {
+  color: #00d4ff;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.founder-bio {
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.founder-expertise {
+  background: rgba(0, 82, 204, 0.08);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+
+.founder-expertise h4 {
+  color: #0052CC;
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+}
+
+.founder-expertise ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.founder-expertise li {
+  padding: 0.4rem 0;
+  color: #666666;
+  font-size: 0.9rem;
+}
+
+/* Vision Section */
+.vision-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #f0f3f8 100%);
+  color: #1a1a1a;
+}
+
+.vision-section h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #0052CC;
+  margin-bottom: 3rem;
+}
+
+.vision-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.vision-card {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2d4a99 100%);
+  padding: 2.5rem;
+  border-radius: 10px;
+  text-align: center;
+  border-top: 3px solid #1e90ff;
+  transition: all 0.3s ease;
+}
+
+.vision-card:hover {
+  border-top-color: #00d4ff;
+  box-shadow: 0 15px 35px rgba(30, 144, 255, 0.2);
+}
+
+.vision-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.vision-card h3 {
+  color: #1e90ff;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.vision-card p {
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+/* Culture Section */
+.culture-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f0f3f8 0%, #f8f9fa 100%);
+  color: #1a1a1a;
+}
+
+.culture-section h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #0052CC;
+  margin-bottom: 1rem;
+}
+
+.culture-section > p {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  color: #666666;
+  line-height: 1.6;
+}
+
+.culture-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.culture-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  padding: 2rem;
+  border-radius: 10px;
+  border-left: 4px solid #0052CC;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 82, 204, 0.08);
+}
+
+.culture-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 82, 204, 0.15);
+  border-left-color: #FF8C00;
+}
+
+.culture-card h4 {
+  color: #0052CC;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.culture-card p {
+  color: #666666;
+  line-height: 1.6;
+}
+
+/* Join CTA */
+.join-cta {
+  background: linear-gradient(135deg, #0052CC 0%, #003A99 50%, #001a4d 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.join-cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.join-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #f0f0f0;
+}
+
+.btn {
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #1e90ff 0%, #00d4ff 100%);
+  color: #0f172a;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(30, 144, 255, 0.3);
+}
+
+.btn.large {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .founders-header h1 {
+    font-size: 2rem;
+  }
+
+  .founders-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vision-content,
+  .culture-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .founders-intro h2,
+  .vision-section h2,
+  .culture-section h2,
+  .join-cta h2 {
+    font-size: 1.8rem;
+  }
+}

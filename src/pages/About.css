@@ -1,0 +1,235 @@
+.about {
+  min-height: 100vh;
+}
+
+.about-header {
+  background: linear-gradient(135deg, #0052CC 0%, #003A99 50%, #001a4d 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.about-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.about-header p {
+  font-size: 1.2rem;
+  color: #FF8C00;
+}
+
+.about-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #f0f3f8 100%);
+  color: #1a1a1a;
+}
+
+.about-section.alternate {
+  background: linear-gradient(135deg, #f0f3f8 0%, #f8f9fa 100%);
+}
+
+.about-section h2 {
+  color: #0052CC;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.content-text p {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #666666;
+}
+
+.works-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.works-list li {
+  padding: 0.6rem 0;
+  padding-left: 1.8rem;
+  position: relative;
+  color: #666666;
+}
+
+.works-list li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #0052CC;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.content-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-placeholder {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #0052CC;
+  transition: all 0.3s ease;
+}
+
+.image-placeholder:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(0, 82, 204, 0.15);
+  border-color: #FF8C00;
+}
+
+.image-placeholder span {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.image-placeholder p {
+  color: #0052CC;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.image-placeholder.founder {
+  width: 280px;
+  height: 280px;
+}
+
+/* Team Section */
+.team-section {
+  text-align: center;
+}
+
+.team-intro {
+  font-size: 1.1rem;
+  color: #666666;
+  margin-bottom: 3rem;
+}
+
+.team-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.team-member {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  padding: 2rem;
+  border-radius: 10px;
+  border-left: 4px solid #0052CC;
+  transition: all 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 82, 204, 0.15);
+  border-left-color: #FF8C00;
+}
+
+.member-avatar {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.team-member h3 {
+  color: #0052CC;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.team-member p {
+  color: #666666;
+  line-height: 1.6;
+}
+
+/* Why Choose Us */
+.why-choose-us {
+  text-align: center;
+}
+
+.reasons-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.reason-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  padding: 2.5rem;
+  border-radius: 10px;
+  border-top: 3px solid #0052CC;
+  transition: all 0.3s ease;
+}
+
+.reason-card:hover {
+  box-shadow: 0 15px 35px rgba(0, 82, 204, 0.15);
+  border-top-color: #FF8C00;
+}
+
+.reason-icon {
+  font-size: 2.5rem;
+  color: #0052CC;
+  margin-bottom: 1rem;
+}
+
+.reason-card h3 {
+  color: #0052CC;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.reason-card p {
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .about-header h1 {
+    font-size: 2rem;
+  }
+
+  .section-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .image-placeholder,
+  .image-placeholder.founder {
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+  }
+
+  .team-grid,
+  .reasons-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-section h2 {
+    font-size: 1.8rem;
+  }
+}
