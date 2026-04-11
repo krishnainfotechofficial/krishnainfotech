@@ -1,4 +1,6 @@
 import './About.css';
+import founderPhoto from '../assets/founder-photo.png';
+import logoImage from '../assets/krishna-logo.png';
 
 export default function About() {
   return (
@@ -29,10 +31,7 @@ export default function About() {
             </p>
           </div>
           <div className="content-image">
-            <div className="image-placeholder">
-              <span>🌐</span>
-              <p>Digital Innovation</p>
-            </div>
+            <img src={logoImage} alt="Krishna Infotech Logo" className="company-logo" />
           </div>
         </div>
       </section>
@@ -89,10 +88,7 @@ export default function About() {
             </p>
           </div>
           <div className="content-image">
-            <div className="image-placeholder founder">
-              <span>👔</span>
-              <p>Visionary Leader</p>
-            </div>
+            <img src={founderPhoto} alt="Ayyakkon G - Founder" className="founder-image" />
           </div>
         </div>
       </section>

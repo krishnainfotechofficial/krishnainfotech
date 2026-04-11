@@ -68,8 +68,33 @@
 }
 
 .founder-avatar {
-  font-size: 4rem;
-  margin-bottom: 1.5rem;
+  width: 190px;
+  height: 190px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0052CC 0%, #003A99 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #FF8C00;
+  transition: all 0.3s ease;
+}
+
+.founder-avatar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(255, 140, 0, 0.4);
+}
+
+.founder-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.founder-icon {
+  font-size: 5rem;
 }
 
 .founder-card h3 {
@@ -99,9 +124,10 @@
 }
 
 .founder-expertise h4 {
-  color: #0052CC;
+  color: #00d4ff;
   margin-bottom: 0.8rem;
   font-size: 0.95rem;
+  font-weight: 600;
 }
 
 .founder-expertise ul {
@@ -112,7 +138,7 @@
 
 .founder-expertise li {
   padding: 0.4rem 0;
-  color: #666666;
+  color: #cbd5e1;
   font-size: 0.9rem;
 }
 

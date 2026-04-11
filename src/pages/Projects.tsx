@@ -4,6 +4,38 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
+      title: 'STRUCT IQ Rebar Services',
+      category: 'Web Development',
+      description: 'Global rebar detailing and estimation services website. Precision-driven approach for constructible and code-compliant reinforcement solutions. Specializes in rebar shop drawings, bar bending schedules, and structural detailing.',
+      technologies: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design', 'Email/FTP Integration'],
+      image: '📐'
+    },
+    {
+      id: 2,
+      title: 'Cloud Based Leave Tracking App',
+      category: 'Mobile Development',
+      description: 'Mobile application developed to automate and simplify the leave application process for educational institutions. Serves three user types: students, staff, and parents. Features real-time push notifications, instant approval/rejection, and digital workflows replacing traditional paper-based systems.',
+      technologies: ['Flutter', 'Firebase', 'Firebase Cloud Messaging (FCM)', 'Cloud Functions', 'Twilio', 'Real-time Database'],
+      image: '📱'
+    },
+    {
+      id: 3,
+      title: 'College Marks Management System',
+      category: 'Full Stack',
+      description: 'Comprehensive web-based application for digital academic assessment management. Features role-based access control for staff and students, hierarchical workflow (Department → Batch → Semester → Exam → Marks Entry), bulk marks entry with real-time validation, and responsive glass morphism UI design. Replaces traditional pen-and-paper approaches with secure, efficient digital workflows.',
+      technologies: ['HTML5', 'CSS3', 'JavaScript', 'Firebase Firestore', 'Firebase Authentication', 'Glass Morphism UI', 'Real-time Database'],
+      image: '📚'
+    },
+    {
+      id: 4,
+      title: 'College Media Portal',
+      category: 'Full Stack',
+      description: 'Centralized web-based platform for managing student registrations and sharing college event media. Features separate login for students and staff, student registration with approval workflow, file upload/download/delete capabilities for both students and staff. Real-time moderation, cloud storage for event media, and role-based access control. Provides transparent, organized digital record-keeping for educational institutions.',
+      technologies: ['HTML5', 'CSS3', 'JavaScript', 'Firebase', 'Firestore Database', 'Cloud Storage', 'Real-time Authentication'],
+      image: '🎥'
+    },
+    {
+      id: 5,
       title: 'E-Commerce Platform',
       category: 'Full Stack',
       description: 'A complete e-commerce solution with product catalog, shopping cart, payment integration, and order management system.',
@@ -11,7 +43,7 @@ export default function Projects() {
       image: '🛒'
     },
     {
-      id: 2,
+      id: 6,
       title: 'Corporate Website',
       category: 'Web Development',
       description: 'Modern, responsive corporate website with CMS integration for easy content management.',
@@ -19,7 +51,7 @@ export default function Projects() {
       image: '🌐'
     },
     {
-      id: 3,
+      id: 7,
       title: 'Project Management App',
       category: 'Full Stack',
       description: 'Collaborative project management application with real-time updates, task tracking, and team communication features.',
@@ -27,7 +59,7 @@ export default function Projects() {
       image: '📊'
     },
     {
-      id: 4,
+      id: 8,
       title: 'Mobile App',
       category: 'Mobile Development',
       description: 'Cross-platform mobile application with offline support and real-time synchronization.',
@@ -35,7 +67,7 @@ export default function Projects() {
       image: '📱'
     },
     {
-      id: 5,
+      id: 9,
       title: 'Analytics Dashboard',
       category: 'Data Visualization',
       description: 'Interactive analytics dashboard with real-time data visualization and comprehensive reporting.',
@@ -43,7 +75,7 @@ export default function Projects() {
       image: '📈'
     },
     {
-      id: 6,
+      id: 10,
       title: 'Blog Platform',
       category: 'Content Management',
       description: 'Feature-rich blogging platform with user authentication, comments, and social sharing capabilities.',
@@ -93,15 +125,15 @@ export default function Projects() {
         
         <div className="stats-grid">
           <div className="stat-card">
-            <div className="stat-number">50+</div>
+            <div className="stat-number">10+</div>
             <p>Projects Completed</p>
           </div>
           <div className="stat-card">
-            <div className="stat-number">30+</div>
+            <div className="stat-number">10+</div>
             <p>Happy Clients</p>
           </div>
           <div className="stat-card">
-            <div className="stat-number">15+</div>
+            <div className="stat-number">6+</div>
             <p>Team Members</p>
           </div>
           <div className="stat-card">

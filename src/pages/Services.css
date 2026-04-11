@@ -81,10 +81,11 @@
 }
 
 .service-description {
-  color: #cbd5e1;
+  color: #333333;
   line-height: 1.6;
   margin-bottom: 1.5rem;
   flex-grow: 1;
+  font-weight: 500;
 }
 
 .service-features {
@@ -98,8 +99,9 @@
 
 .service-features li {
   padding: 0.5rem 0;
-  color: #cbd5e1;
+  color: #333333;
   font-size: 0.95rem;
+  font-weight: 500;
 }
 
 .service-features li:before {

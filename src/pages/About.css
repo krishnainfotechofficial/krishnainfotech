@@ -81,8 +81,8 @@
 }
 
 .image-placeholder {
-  width: 300px;
-  height: 300px;
+  width: 290px;
+  height: 290px;
   background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
   border-radius: 15px;
   display: flex;
@@ -111,8 +111,36 @@
 }
 
 .image-placeholder.founder {
-  width: 280px;
-  height: 280px;
+  width: 270px;
+  height: 270px;
+}
+
+.company-logo {
+  width: 290px;
+  height: 290px;
+  object-fit: contain;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.company-logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(0, 82, 204, 0.15);
+}
+
+.founder-image {
+  width: 270px;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 3px solid #0052CC;
+  transition: all 0.3s ease;
+}
+
+.founder-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(0, 82, 204, 0.15);
+  border-color: #FF8C00;
 }
 
 /* Team Section */
@@ -203,8 +231,9 @@
 }
 
 .reason-card p {
-  color: #cbd5e1;
+  color: #333333;
   line-height: 1.6;
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {

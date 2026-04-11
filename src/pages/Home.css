@@ -171,8 +171,9 @@
 }
 
 .feature-card p {
-  color: #cbd5e1;
+  color: #333333;
   line-height: 1.5;
+  font-weight: 500;
 }
 
 /* How We Work Section */
@@ -253,14 +254,7 @@
 }
 
 .process-number {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #1e90ff;
-  opacity: 0.2;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  animation: divineHeartbeat 2s ease-in-out infinite;
+  display: none;
 }
 
 @keyframes divineHeartbeat {

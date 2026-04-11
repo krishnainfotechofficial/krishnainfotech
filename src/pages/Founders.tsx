@@ -1,30 +1,17 @@
 import './Founders.css';
+import founderPhoto from '../assets/founder-photo.png';
 
 export default function Founders() {
   const founders = [
     {
       id: 1,
-      name: 'Visionary Leader',
+      name: 'Ayyakkon G',
       role: 'Founder & CEO',
-      bio: 'A seasoned entrepreneur and technology expert with over 15 years of experience in software development and digital innovation. Passionate about building products that make a difference.',
-      expertise: ['Full Stack Development', 'Architecture', 'Leadership', 'Innovation'],
+      bio: 'A visionary leader specializing in Full Stack Development, dedicated to driving technological innovation and delivering exceptional client success. Passionate about transforming complex challenges into robust, scalable solutions that empower businesses.',
+      expertise: ['Full Stack Development', 'Leadership', 'Innovation', 'Client Success'],
+      photo: founderPhoto,
+      portfolio: 'https://ayyakkon.github.io/portfolio/',
       icon: '👨‍💼'
-    },
-    {
-      id: 2,
-      name: 'Tech Lead',
-      role: 'CTO & Co-Founder',
-      bio: 'Dedicated technical leader with deep expertise in cloud technologies, system design, and team management. Committed to delivering scalable and secure solutions.',
-      expertise: ['Cloud Architecture', 'DevOps', 'Security', 'System Design'],
-      icon: '👨‍💻'
-    },
-    {
-      id: 3,
-      name: 'Business Strategist',
-      role: 'COO',
-      bio: 'Strategic thinker focused on business growth and client satisfaction. Brings extensive experience in project management and stakeholder relations.',
-      expertise: ['Business Development', 'Project Management', 'Client Relations', 'Operations'],
-      icon: '👨‍🏫'
     }
   ];
 
@@ -32,24 +19,31 @@ export default function Founders() {
     <div className="founders">
       {/* Header */}
       <section className="founders-header">
-        <h1>Our Founders</h1>
-        <p>Visionary leaders committed to excellence and innovation</p>
+        <h1>Our Founder</h1>
+        <p>Visionary leader committed to excellence and innovation</p>
       </section>
 
       {/* Founders Grid */}
       <section className="founders-content">
         <div className="founders-intro">
-          <h2>Meet Our Leadership</h2>
+          <h2>Meet Our Founder</h2>
           <p>
-            Our founders bring together decades of combined experience in software development, business strategy, 
-            and technology innovation. Their vision guides Krishna Infotech towards continuous excellence and growth.
+            Our founder brings together decades of experience in software development, 
+            technology innovation, and business growth. Their vision guides Krishna Infotech 
+            towards continuous excellence and client success.
           </p>
         </div>
 
         <div className="founders-grid">
           {founders.map((founder) => (
             <div key={founder.id} className="founder-card">
-              <div className="founder-avatar">{founder.icon}</div>
+              <div className="founder-avatar">
+                {founder.photo ? (
+                  <img src={founder.photo} alt={founder.name} className="founder-photo" />
+                ) : (
+                  <span className="founder-icon">{founder.icon}</span>
+                )}
+              </div>
               <h3>{founder.name}</h3>
               <p className="founder-role">{founder.role}</p>
               <p className="founder-bio">{founder.bio}</p>
@@ -61,6 +55,13 @@ export default function Founders() {
                   ))}
                 </ul>
               </div>
+              {founder.portfolio && (
+                <div className="founder-portfolio" style={{ marginTop: '1.5rem' }}>
+                  <a href={founder.portfolio} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ textDecoration: 'none' }}>
+                    View Portfolio
+                  </a>
+                </div>
+              )}
             </div>
           ))}
         </div>
