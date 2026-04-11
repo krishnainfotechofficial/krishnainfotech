@@ -242,8 +242,17 @@
   }
 
   .section-content {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
+  }
+
+  .content-text {
+    order: 2;
+  }
+
+  .content-image {
+    order: 1;
   }
 
   .image-placeholder,

@@ -78,11 +78,11 @@
 
 @media (max-width: 768px) {
   .splash-logo {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
   }
 
   .splash-text {
-    font-size: 24px;
+    font-size: 28px;
   }
 }
