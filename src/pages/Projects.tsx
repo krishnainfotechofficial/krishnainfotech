@@ -20,6 +20,38 @@ export default function Projects() {
     },
     {
       id: 3,
+      title: 'Mind Challenge Game',
+      category: 'Full Stack',
+      description: 'Interactive web-based application with two modules: a Number Guessing Game with time constraints and feedback, and a Crossword Puzzle Game. Developed to enhance logical thinking and problem-solving skills with a responsive UI.',
+      technologies: ['HTML5', 'CSS3', 'JavaScript', 'Full Stack'],
+      image: '🧠'
+    },
+    {
+      id: 4,
+      title: 'FoodHub Ordering System',
+      category: 'Full Stack',
+      description: 'Web-based food ordering platform allowing users to browse restaurants and place orders. Includes a customer module for cart and order history, plus an admin module to manage items and dynamic order statuses.',
+      technologies: ['HTML5', 'CSS3', 'JavaScript', 'Node.js', 'MongoDB', 'Full Stack'],
+      image: '🍔'
+    },
+    {
+      id: 5,
+      title: 'Inventory & Sales Accounting System',
+      category: 'Web Development',
+      description: 'A comprehensive system developed to automate inventory tracking, sales transactions, and financial reporting for Sree Ponnatchiamman Traders. Replaces manual methods with structured, real-time data handling.',
+      technologies: ['HTML5', 'CSS3', 'JavaScript', 'Python', 'MongoDB', 'Web Development'],
+      image: '📦'
+    },
+    {
+      id: 6,
+      title: 'Smart Fuel Cost Calculator',
+      category: 'Web Development',
+      description: 'An interactive application designed to calculate and manage travel expenses. Features a history-tracking login system, automatic trip and toll cost estimation, and Geolocation API integration with Google Maps to locate nearby petrol bunks.',
+      technologies: ['HTML5', 'CSS3', 'JavaScript', 'Geolocation API', 'Local Storage'],
+      image: '⛽'
+    },
+    {
+      id: 7,
       title: 'College Marks Management System',
       category: 'Full Stack',
       description: 'Comprehensive web-based application for digital academic assessment management. Features role-based access control for staff and students, hierarchical workflow (Department → Batch → Semester → Exam → Marks Entry), bulk marks entry with real-time validation, and responsive glass morphism UI design. Replaces traditional pen-and-paper approaches with secure, efficient digital workflows.',
@@ -27,60 +59,12 @@ export default function Projects() {
       image: '📚'
     },
     {
-      id: 4,
+      id: 8,
       title: 'College Media Portal',
       category: 'Full Stack',
       description: 'Centralized web-based platform for managing student registrations and sharing college event media. Features separate login for students and staff, student registration with approval workflow, file upload/download/delete capabilities for both students and staff. Real-time moderation, cloud storage for event media, and role-based access control. Provides transparent, organized digital record-keeping for educational institutions.',
       technologies: ['HTML5', 'CSS3', 'JavaScript', 'Firebase', 'Firestore Database', 'Cloud Storage', 'Real-time Authentication'],
       image: '🎥'
-    },
-    {
-      id: 5,
-      title: 'E-Commerce Platform',
-      category: 'Full Stack',
-      description: 'A complete e-commerce solution with product catalog, shopping cart, payment integration, and order management system.',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      image: '🛒'
-    },
-    {
-      id: 6,
-      title: 'Corporate Website',
-      category: 'Web Development',
-      description: 'Modern, responsive corporate website with CMS integration for easy content management.',
-      technologies: ['React', 'Tailwind CSS', 'CMS', 'SEO'],
-      image: '🌐'
-    },
-    {
-      id: 7,
-      title: 'Project Management App',
-      category: 'Full Stack',
-      description: 'Collaborative project management application with real-time updates, task tracking, and team communication features.',
-      technologies: ['React', 'Firebase', 'WebSockets', 'Material-UI'],
-      image: '📊'
-    },
-    {
-      id: 8,
-      title: 'Mobile App',
-      category: 'Mobile Development',
-      description: 'Cross-platform mobile application with offline support and real-time synchronization.',
-      technologies: ['React Native', 'Node.js', 'Firebase'],
-      image: '📱'
-    },
-    {
-      id: 9,
-      title: 'Analytics Dashboard',
-      category: 'Data Visualization',
-      description: 'Interactive analytics dashboard with real-time data visualization and comprehensive reporting.',
-      technologies: ['React', 'D3.js', 'PostgreSQL', 'Python'],
-      image: '📈'
-    },
-    {
-      id: 10,
-      title: 'Blog Platform',
-      category: 'Content Management',
-      description: 'Feature-rich blogging platform with user authentication, comments, and social sharing capabilities.',
-      technologies: ['Next.js', 'PostgreSQL', 'OAuth', 'Redis'],
-      image: '✍️'
     }
   ];
 
