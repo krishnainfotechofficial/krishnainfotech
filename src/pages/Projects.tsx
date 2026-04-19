@@ -20,6 +20,14 @@ export default function Projects() {
     },
     {
       id: 3,
+      title: 'College Marks Management System',
+      category: 'Full Stack',
+      description: 'Comprehensive web-based application for digital academic assessment management. Features role-based access control for staff and students, hierarchical workflow (Department → Batch → Semester → Exam → Marks Entry), bulk marks entry with real-time validation, and responsive glass morphism UI design. Replaces traditional pen-and-paper approaches with secure, efficient digital workflows.',
+      technologies: ['HTML5', 'CSS3', 'JavaScript', 'Firebase Firestore', 'Firebase Authentication', 'Glass Morphism UI', 'Real-time Database'],
+      image: '📚'
+    },
+    {
+      id: 4,
       title: 'Mind Challenge Game',
       category: 'Full Stack',
       description: 'Interactive web-based application with two modules: a Number Guessing Game with time constraints and feedback, and a Crossword Puzzle Game. Developed to enhance logical thinking and problem-solving skills with a responsive UI.',
@@ -27,7 +35,7 @@ export default function Projects() {
       image: '🧠'
     },
     {
-      id: 4,
+      id: 5,
       title: 'FoodHub Ordering System',
       category: 'Full Stack',
       description: 'Web-based food ordering platform allowing users to browse restaurants and place orders. Includes a customer module for cart and order history, plus an admin module to manage items and dynamic order statuses.',
@@ -35,7 +43,7 @@ export default function Projects() {
       image: '🍔'
     },
     {
-      id: 5,
+      id: 6,
       title: 'Inventory & Sales Accounting System',
       category: 'Web Development',
       description: 'A comprehensive system developed to automate inventory tracking, sales transactions, and financial reporting for Sree Ponnatchiamman Traders. Replaces manual methods with structured, real-time data handling.',
@@ -43,20 +51,12 @@ export default function Projects() {
       image: '📦'
     },
     {
-      id: 6,
+      id: 7,
       title: 'Smart Fuel Cost Calculator',
       category: 'Web Development',
       description: 'An interactive application designed to calculate and manage travel expenses. Features a history-tracking login system, automatic trip and toll cost estimation, and Geolocation API integration with Google Maps to locate nearby petrol bunks.',
       technologies: ['HTML5', 'CSS3', 'JavaScript', 'Geolocation API', 'Local Storage'],
       image: '⛽'
-    },
-    {
-      id: 7,
-      title: 'College Marks Management System',
-      category: 'Full Stack',
-      description: 'Comprehensive web-based application for digital academic assessment management. Features role-based access control for staff and students, hierarchical workflow (Department → Batch → Semester → Exam → Marks Entry), bulk marks entry with real-time validation, and responsive glass morphism UI design. Replaces traditional pen-and-paper approaches with secure, efficient digital workflows.',
-      technologies: ['HTML5', 'CSS3', 'JavaScript', 'Firebase Firestore', 'Firebase Authentication', 'Glass Morphism UI', 'Real-time Database'],
-      image: '📚'
     },
     {
       id: 8,
