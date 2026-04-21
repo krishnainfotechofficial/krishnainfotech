@@ -57,15 +57,16 @@ export default function Projects() {
       description: 'An interactive application designed to calculate and manage travel expenses. Features a history-tracking login system, automatic trip and toll cost estimation, and Geolocation API integration with Google Maps to locate nearby petrol bunks.',
       technologies: ['HTML5', 'CSS3', 'JavaScript', 'Geolocation API', 'Local Storage'],
       image: '⛽'
-    },
-    {
-      id: 8,
-      title: 'College Media Portal',
-      category: 'Full Stack',
-      description: 'Centralized web-based platform for managing student registrations and sharing college event media. Features separate login for students and staff, student registration with approval workflow, file upload/download/delete capabilities for both students and staff. Real-time moderation, cloud storage for event media, and role-based access control. Provides transparent, organized digital record-keeping for educational institutions.',
-      technologies: ['HTML5', 'CSS3', 'JavaScript', 'Firebase', 'Firestore Database', 'Cloud Storage', 'Real-time Authentication'],
-      image: '🎥'
     }
+    // ,
+    // {
+    //   id: 8,
+    //   title: 'College Media Portal',
+    //   category: 'Full Stack',
+    //   description: 'Centralized web-based platform for managing student registrations and sharing college event media. Features separate login for students and staff, student registration with approval workflow, file upload/download/delete capabilities for both students and staff. Real-time moderation, cloud storage for event media, and role-based access control. Provides transparent, organized digital record-keeping for educational institutions.',
+    //   technologies: ['HTML5', 'CSS3', 'JavaScript', 'Firebase', 'Firestore Database', 'Cloud Storage', 'Real-time Authentication'],
+    //   image: '🎥'
+    // }
   ];
 
   return (
